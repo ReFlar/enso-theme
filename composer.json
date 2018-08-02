@@ -1,0 +1,37 @@
+{
+  "name": "reflar/enso-theme",
+  "description": "Change the look and feel of your Flarum forum!",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "Unlicense",
+  "require": {
+    "flarum/core": "^0.1.0-beta-7"
+  },
+  "authors": [
+    {
+      "name": "Joel Bond",
+      "email": "joel.bond@partialdev.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Reflar\\Enso\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Enso Theme",
+      "icon": {
+        "name": "",
+        "backgroundColor": "",
+        "color": ""
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
