@@ -12,8 +12,6 @@ use Flarum\Extend;
 use Illuminate\Contracts\Events\Dispatcher;
 return [
     function (Dispatcher $events) {
-        $events->subscribe(Listener\AddPostReactionsRelationship::class);
-        $events->subscribe(Listener\SaveReactionsToDatabase::class);
-        $events->subscribe(Listener\SendNotificationWhenPostIsReacted::class);
+        $events->subscribe(Listener\AddClientAssets::class);
     },
 ];
