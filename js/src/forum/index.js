@@ -4,7 +4,6 @@ import { extend } from "flarum/extend";
 
 app.initializers.add('reflar/enso-theme', () => {
   extend(DiscussionListItem.prototype, "view", vnode => {
-    if (vnode.)
-    vnode.children.push(<span>iH</span>); 
+    vnode.children.push(<span>iH</span>);
   });
 });

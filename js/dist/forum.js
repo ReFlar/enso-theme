@@ -106,9 +106,57 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./src/forum/index.js ***!
   \****************************/
 /*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/app */ "flarum/app");
+/* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var flarum_components_DiscussionListItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/components/DiscussionListItem */ "flarum/components/DiscussionListItem");
+/* harmony import */ var flarum_components_DiscussionListItem__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_components_DiscussionListItem__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var flarum_extend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/extend */ "flarum/extend");
+/* harmony import */ var flarum_extend__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_extend__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializers.add('reflar/enso-theme', function () {
+  Object(flarum_extend__WEBPACK_IMPORTED_MODULE_2__["extend"])(flarum_components_DiscussionListItem__WEBPACK_IMPORTED_MODULE_1___default.a.prototype, "view", function (vnode) {
+    vnode.children.push(m("span", null, "iH"));
+  });
+});
+
+/***/ }),
+
+/***/ "flarum/app":
+/*!********************************************!*\
+  !*** external "flarum.core.compat['app']" ***!
+  \********************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /var/www/flarum/beta8/workbench/enso-theme/js/src/forum/index.js: Unexpected token (7:14)\n\n\u001b[0m \u001b[90m  5 | \u001b[39mapp\u001b[33m.\u001b[39minitializers\u001b[33m.\u001b[39madd(\u001b[32m'reflar/enso-theme'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m  6 | \u001b[39m  extend(\u001b[33mDiscussionListItem\u001b[39m\u001b[33m.\u001b[39mprototype\u001b[33m,\u001b[39m \u001b[32m\"view\"\u001b[39m\u001b[33m,\u001b[39m vnode \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 | \u001b[39m    \u001b[36mif\u001b[39m (vnode\u001b[33m.\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 | \u001b[39m    vnode\u001b[33m.\u001b[39mchildren\u001b[33m.\u001b[39mpush(\u001b[33m<\u001b[39m\u001b[33mspan\u001b[39m\u001b[33m>\u001b[39miH\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mspan\u001b[39m\u001b[33m>\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m  })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\n    at _class.raise (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:4028:15)\n    at _class.unexpected (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5343:16)\n    at _class.parseIdentifierName (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7145:18)\n    at _class.parseIdentifier (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7119:21)\n    at _class.parseMaybePrivateName (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6463:19)\n    at _class.parseSubscript (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6090:30)\n    at _class.parseSubscripts (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6039:19)\n    at _class.parseExprSubscripts (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6029:17)\n    at _class.parseMaybeUnary (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5998:21)\n    at _class.parseExprOps (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5907:21)\n    at _class.parseMaybeConditional (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5879:21)\n    at _class.parseMaybeAssign (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5826:21)\n    at _class.parseExpression (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5779:21)\n    at _class.parseParenExpression (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6537:20)\n    at _class.parseIfStatement (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7615:22)\n    at _class.parseStatementContent (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7308:21)\n    at _class.parseStatement (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7277:17)\n    at _class.parseBlockOrModuleBlockBody (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7829:23)\n    at _class.parseBlockBody (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7816:10)\n    at _class.parseBlock (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7805:10)\n    at _class.parseFunctionBody (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7042:24)\n    at _class.parseArrowExpression (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6995:10)\n    at _class.parseExprAtom (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6335:18)\n    at _class.parseExprAtom (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:3724:52)\n    at _class.parseExprSubscripts (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:6019:21)\n    at _class.parseMaybeUnary (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5998:21)\n    at _class.parseExprOps (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5907:21)\n    at _class.parseMaybeConditional (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5879:21)\n    at _class.parseMaybeAssign (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:5826:21)\n    at _class.parseExprListItem (/var/www/flarum/beta8/workbench/enso-theme/js/node_modules/@babel/parser/lib/index.js:7111:18)");
+module.exports = flarum.core.compat['app'];
+
+/***/ }),
+
+/***/ "flarum/components/DiscussionListItem":
+/*!**********************************************************************!*\
+  !*** external "flarum.core.compat['components/DiscussionListItem']" ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['components/DiscussionListItem'];
+
+/***/ }),
+
+/***/ "flarum/extend":
+/*!***********************************************!*\
+  !*** external "flarum.core.compat['extend']" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['extend'];
 
 /***/ })
 
