@@ -28,10 +28,11 @@ input.FormControl {
 
 .item-like:before {
     content: "\F164";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 8px;
     margin-left: -3px;
+    font-weight: 900px;
 }
 
 .item-reply {
@@ -39,11 +40,12 @@ input.FormControl {
 }
 
 .item-reply:before {
-    content: "\f112";
-    font-family: FontAwesome;
+    content: "\f3e5";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 9px;
     margin-left: -3px;
+    font-weight: 900;
 }
 
 #content > div > div.container > div > div > div > ul > li > div:hover {
@@ -54,41 +56,17 @@ input.FormControl {
     margin-right: 2px;
 }
 
-.item-like {
-    position: relative;
-}
-
-.item-like:before {
-    content: "\F164";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 8px;
-    margin-left: -3px;
-}
-
-.item-reply {
-    position: relative;
-}
-
-.item-reply:before {
-    content: "\f112";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 9px;
-    margin-left: -3px;
-}
-
 .item-controls .ButtonGroup .Button:first-child:not(:last-child):not(.Dropdown-toggle) {
     position: relative;
 }
 
 .item-controls .ButtonGroup .Button:first-child:not(:last-child):not(.Dropdown-toggle):before {
-    content: "\f112";
-    font-family: FontAwesome;
+    content: "\f3e5";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 8px;
     margin-left: -5px;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .item-controls .ButtonGroup>.Button:first-child:not(:last-child):not(.Dropdown-toggle)>span {
@@ -117,24 +95,6 @@ input.FormControl {
 
 .item-flags .NotificationsDropdown {
     margin-right: 2px;
-}
-
-.AlertManager .Alert:before {
-    content: "\f071";
-    font-family: FontAwesome;
-    position: absolute;
-    color: white;
-    font-size: 20px;
-    margin-left: -2px;
-    top: 8px;
-}
-
-.AlertManager .Alert {
-    position: relative;
-}
-
-.Alert-body {
-    margin-left: 2em;
 }
 
 .Button {
@@ -203,12 +163,7 @@ span.TagLabel {
 }
 
 ul.Dropdown-menu.dropdown-menu.Dropdown-menu--right {
-    padding: 3px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .10s;
-    transition: .5s;
+    padding: 0.5rem;
 }
 
 .Dropdown--split.itemCount1 .Button {
@@ -220,10 +175,53 @@ li.Dropdown-separator {
 }
 
 .sideNav .Dropdown--select .Dropdown-menu {
-    padding: 3px;
+    padding: 0.5rem;
 }
 
 .Search-results mark {
     padding: 3px;
     border-radius: 16px;
+}
+
+.DiscussionListItem-controls .Dropdown-menu {
+    padding: 0.5rem;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .10s;
+    transition: .5s;
+}
+
+.NotificationGrid {
+    border-radius: 16px;
+}
+
+.NotificationGrid-checkbox .Checkbox {
+    border-radius: 16px;
+}
+
+.ComposerBody-header h3 input, .ComposerBody-header h3 input[disabled], .ComposerBody-header h3 input:focus {
+    border-radius: 0px;
+}
+
+.Composer.normal.visible {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.Dropdown-menu{
+    border-radius: 16px;
+    padding: 0.5rem
+}
+
+button.Dropdown-toggle.Button.Button--icon.Button--flat.Slidable-underneath.Slidable-underneath--right {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.DiscussionListItem-info li.item-tags {
+    margin-top: 8px;
+}
+
+span.DiscussionListItem-count {
+    margin-top: 20px;
 }
