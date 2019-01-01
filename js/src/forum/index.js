@@ -8,9 +8,6 @@ function addToDiscussionDropDown(title, icon) {   // icon will be a FA Icon.  e.
 
   // Then iterate over all the elements provided in the array above.
   for (var i = 0; i < listHolder.length; i++) {
-    // Get all of the children of dropdown list.
-    console.log()
-
     if (listHolder[i].children[1].getElementsByClassName("item-" + title.match(/[a-zA-Z]+/g).join('')).length <= 0) {
       var temp = listHolder[i].children[1].children[0].cloneNode(true);
       var separators = listHolder[i].children[1].getElementsByClassName("Dropdown-separator");
